@@ -4,4 +4,7 @@ defmodule MyModule.Math do
     end
 
     def subtract(first, second), do: first - second
+
+    def is_zero?(0), do: true
+    def is_zero?(number) when(is_integer(number)) , do: false
 end
